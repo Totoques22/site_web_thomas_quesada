@@ -1,0 +1,27 @@
+body {
+	background-color : black;
+	color : white;
+}
+h3{
+	 color: green;
+}
+h2{
+	color: orange;
+	background-color: purple;
+}
+h2 strong{
+font-variant: small-caps;
+font-size : 5em;
+}
+
+strong{
+	color : red;
+}
+
+h1{
+	font-size : 3.5em;
+	font-variant: small-caps;
+	text-decoration : underline;
+	color: red;
+	text-align :end;
+}

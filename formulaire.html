@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<title> Formulaire de commande </title>
+</head>
+
+<body>
+	<h1>Commande de pizza</h1>
+	
+	<form>
+	<fieldset><legend> Garniture</legend>
+	<label for="Fromage"><input name="garniture" id="Fromage" type="checkbox" value="fromage">
+	Fromage</label>
+	<label for="Olives"><input name="garniture" id="Olives" type="checkbox" value="olives">
+	Olives</label>
+	<label for="Champignons"><input name="garniture" id="Champignons" type="checkbox" value="champignons">
+	Champignons</label>
+	</fieldset>
+	
+	<fieldset><legend> Taille</legend>
+	<label for="Petite"><input name="taille" id="Petite" type="radio" value="Petite">
+	Petite</label>
+	<label for="Moyenne"><input name="taille" id="Moyenne" type="radio" value="Moyenne">
+	Moyenne</label>
+	<label for="Grande"><input name="taille" id="Grande" type="radio" value="Grande">
+	Grande</label>
+	</fieldset>
+	
+	<fieldset><legend> Type</legend>
+	<label for="Blanche"><input name="type" id="Blanche" type="radio" value="Blanche">
+	Blanche</label>
+	<label for="Rouge"><input name="type" id="Rouge" type="radio" value="Rouge">
+	Rouge</label>
+	</fieldset>
+	
+	<fieldset><legend>Livraison</legend>
+	<label for="datelivraison">Date de la livraison : </label>
+	<input type="date" id="datelivraison" name="datelivraison" value="2025-01-01" min="2024-12-15" max="2099-12-31">
+	</fieldset>
+	
+	
+	<label for="code">Code de reduction</label>
+    <input type="password" id="code" name="code" minlength="8">
+  
+    <label for="commentaire">Chose a signaler au pizzaiolo:</label>
+    <input type="text" id="commentaire" name="commentaire" required minlength="4" maxlength="20" size="20">
+	
+	<button type="submit">Envoyer au serveur</button>
+	</form>
+</body>
+</html>
